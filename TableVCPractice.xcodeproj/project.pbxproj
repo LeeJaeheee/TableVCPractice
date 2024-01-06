@@ -13,6 +13,7 @@
 		D2109ECF2B4903FC00EE9BF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2109ECD2B4903FC00EE9BF1 /* Main.storyboard */; };
 		D2109ED12B4903FD00EE9BF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2109ED02B4903FD00EE9BF1 /* Assets.xcassets */; };
 		D2109ED42B4903FD00EE9BF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2109ED22B4903FD00EE9BF1 /* LaunchScreen.storyboard */; };
+		D2109EDC2B4909A400EE9BF1 /* Case2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EDB2B4909A400EE9BF1 /* Case2TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D2109ED02B4903FD00EE9BF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2109ED32B4903FD00EE9BF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2109ED52B4903FD00EE9BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2109EDB2B4909A400EE9BF1 /* Case2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case2TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				D2109ED02B4903FD00EE9BF1 /* Assets.xcassets */,
 				D2109ED22B4903FD00EE9BF1 /* LaunchScreen.storyboard */,
 				D2109ED52B4903FD00EE9BF1 /* Info.plist */,
+				D2109EDB2B4909A400EE9BF1 /* Case2TableViewController.swift */,
 			);
 			path = TableVCPractice;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				D2109ECC2B4903FC00EE9BF1 /* ViewController.swift in Sources */,
 				D2109EC82B4903FC00EE9BF1 /* AppDelegate.swift in Sources */,
+				D2109EDC2B4909A400EE9BF1 /* Case2TableViewController.swift in Sources */,
 				D2109ECA2B4903FC00EE9BF1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
