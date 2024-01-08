@@ -83,27 +83,32 @@ class Case3TableViewController: UITableViewController {
         cell.cellView.backgroundColor = .systemGray6
         setCornerRadius(cell.cellView, cornerRadius: 8)
         
+        cell.checkBoxButton.tag = indexPath.row
         cell.checkBoxButton.setImage(
             UIImage(systemName: list[indexPath.row].isChecked ? "checkmark.square.fill" : "checkmark.square"),
             for: .normal)
-        cell.checkBoxAction = { [weak self] in
-            print(indexPath)
-            self?.list[indexPath.row].isChecked.toggle()
-            tableView.reloadRows(at: [indexPath], with: .none)
-        }
+        cell.checkBoxButton.addTarget(self, action: #selector(checkBoxButtonTapped), for: .touchUpInside)
         
         cell.titleLabel.text = list[indexPath.row].title
         cell.titleLabel.font = .systemFont(ofSize: 14)
         
+        cell.bookmarkButton.tag = indexPath.row
         cell.bookmarkButton.setImage(
             UIImage(systemName: list[indexPath.row].isBookmarked ? "star.fill" : "star"),
             for: .normal)
-        cell.bookmarkAction = { [weak self] in
-            self?.list[indexPath.row].isBookmarked.toggle()
-            tableView.reloadRows(at: [indexPath], with: .none)
-        }
+        cell.bookmarkButton.addTarget(self, action: #selector(bookmarkButtonTapped), for: .touchUpInside)
         
         return cell
+    }
+    
+    @objc func checkBoxButtonTapped(sender: UIButton, name: String) {
+        list[sender.tag].isChecked.toggle()
+        tableView.reloadRows(at: [IndexPath(row: sender.tag, section: 0)], with: .fade)
+    }
+    
+    @objc func bookmarkButtonTapped(sender: UIButton) {
+        list[sender.tag].isBookmarked.toggle()
+        tableView.reloadRows(at: [IndexPath(row: sender.tag, section: 0)], with: .fade)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
