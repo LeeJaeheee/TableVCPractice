@@ -59,18 +59,14 @@ class Case3TableViewController: UITableViewController {
     }
     
     func setupHeader() {
-        headerView.backgroundColor = .systemGray6
-        setCornerRadius(headerView, cornerRadius: 8)
+        headerView.setupViewForCase3()
         
         headerTextField.placeholder = "무엇을 구매하실 건가요?"
         
         addButton.setTitle("추가", for: .normal)
-        setCornerRadius(addButton, cornerRadius: 5)
+        addButton.setupViewForCase3(backgroundColor: .systemGray5, cornerRadius: 5)
     }
-    
-    func setCornerRadius(_ view: UIView, cornerRadius: CGFloat) {
-        view.layer.cornerRadius = cornerRadius
-    }
+
     
     // MARK: - TableView
     
@@ -81,8 +77,7 @@ class Case3TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Case3TableViewCell", for: indexPath) as! Case3TableViewCell
         
-        cell.cellView.backgroundColor = .systemGray6
-        setCornerRadius(cell.cellView, cornerRadius: 8)
+        cell.cellView.setupViewForCase3()
         
         cell.checkBoxButton.tag = indexPath.row
         cell.checkBoxButton.setImage(
@@ -102,7 +97,7 @@ class Case3TableViewController: UITableViewController {
         return cell
     }
     
-    @objc func checkBoxButtonTapped(sender: UIButton, name: String) {
+    @objc func checkBoxButtonTapped(sender: UIButton) {
         list[sender.tag].isChecked.toggle()
         tableView.reloadRows(at: [IndexPath(row: sender.tag, section: 0)], with: .fade)
     }
@@ -121,5 +116,14 @@ class Case3TableViewController: UITableViewController {
             list.remove(at: indexPath.row)
             tableView.reloadData()
         }
+    }
+}
+
+// MARK: - Extensions
+
+extension UIView {
+    func setupViewForCase3(backgroundColor: UIColor = .systemGray6, cornerRadius: CGFloat = 8) {
+        self.backgroundColor = backgroundColor
+        self.layer.cornerRadius = cornerRadius
     }
 }
