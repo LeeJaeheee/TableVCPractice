@@ -35,6 +35,7 @@ class Case3TableViewController: UITableViewController {
         
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
+        tableView.rowHeight = 48
         
         setupHeader()
     }
@@ -109,10 +110,6 @@ class Case3TableViewController: UITableViewController {
     @objc func bookmarkButtonTapped(sender: UIButton) {
         list[sender.tag].isBookmarked.toggle()
         tableView.reloadRows(at: [IndexPath(row: sender.tag, section: 0)], with: .fade)
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 48
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
