@@ -16,6 +16,10 @@
 		D2109EDC2B4909A400EE9BF1 /* Case2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EDB2B4909A400EE9BF1 /* Case2TableViewController.swift */; };
 		D2109EDE2B491D9B00EE9BF1 /* Case3TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EDD2B491D9B00EE9BF1 /* Case3TableViewController.swift */; };
 		D2109EE02B491DCA00EE9BF1 /* Case3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EDF2B491DCA00EE9BF1 /* Case3TableViewCell.swift */; };
+		D2109EE52B4BE3E000EE9BF1 /* MagazineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EE42B4BE3DF00EE9BF1 /* MagazineInfo.swift */; };
+		D2109EE82B4BE47A00EE9BF1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D2109EE72B4BE47A00EE9BF1 /* Kingfisher */; };
+		D2109EEA2B4BE4EA00EE9BF1 /* MagazineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EE92B4BE4EA00EE9BF1 /* MagazineTableViewController.swift */; };
+		D2109EEC2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EEB2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,9 @@
 		D2109EDB2B4909A400EE9BF1 /* Case2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case2TableViewController.swift; sourceTree = "<group>"; };
 		D2109EDD2B491D9B00EE9BF1 /* Case3TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3TableViewController.swift; sourceTree = "<group>"; };
 		D2109EDF2B491DCA00EE9BF1 /* Case3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3TableViewCell.swift; sourceTree = "<group>"; };
+		D2109EE42B4BE3DF00EE9BF1 /* MagazineInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineInfo.swift; sourceTree = "<group>"; };
+		D2109EE92B4BE4EA00EE9BF1 /* MagazineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineTableViewController.swift; sourceTree = "<group>"; };
+		D2109EEB2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2109EE82B4BE47A00EE9BF1 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,9 @@
 				D2109EDB2B4909A400EE9BF1 /* Case2TableViewController.swift */,
 				D2109EDD2B491D9B00EE9BF1 /* Case3TableViewController.swift */,
 				D2109EDF2B491DCA00EE9BF1 /* Case3TableViewCell.swift */,
+				D2109EE42B4BE3DF00EE9BF1 /* MagazineInfo.swift */,
+				D2109EE92B4BE4EA00EE9BF1 /* MagazineTableViewController.swift */,
+				D2109EEB2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift */,
 			);
 			path = TableVCPractice;
 			sourceTree = "<group>";
@@ -92,6 +103,9 @@
 			dependencies = (
 			);
 			name = TableVCPractice;
+			packageProductDependencies = (
+				D2109EE72B4BE47A00EE9BF1 /* Kingfisher */,
+			);
 			productName = TableVCPractice;
 			productReference = D2109EC42B4903FC00EE9BF1 /* TableVCPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +134,9 @@
 				Base,
 			);
 			mainGroup = D2109EBB2B4903FC00EE9BF1;
+			packageReferences = (
+				D2109EE62B4BE47A00EE9BF1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D2109EC52B4903FC00EE9BF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,6 +168,9 @@
 				D2109ECC2B4903FC00EE9BF1 /* ViewController.swift in Sources */,
 				D2109EC82B4903FC00EE9BF1 /* AppDelegate.swift in Sources */,
 				D2109EDC2B4909A400EE9BF1 /* Case2TableViewController.swift in Sources */,
+				D2109EE52B4BE3E000EE9BF1 /* MagazineInfo.swift in Sources */,
+				D2109EEA2B4BE4EA00EE9BF1 /* MagazineTableViewController.swift in Sources */,
+				D2109EEC2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift in Sources */,
 				D2109ECA2B4903FC00EE9BF1 /* SceneDelegate.swift in Sources */,
 				D2109EE02B491DCA00EE9BF1 /* Case3TableViewCell.swift in Sources */,
 			);
@@ -309,8 +329,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaehee.TableVCPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -336,8 +359,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,9 +368,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaehee.TableVCPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -373,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2109EE62B4BE47A00EE9BF1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2109EE72B4BE47A00EE9BF1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2109EE62B4BE47A00EE9BF1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2109EBC2B4903FC00EE9BF1 /* Project object */;
 }
