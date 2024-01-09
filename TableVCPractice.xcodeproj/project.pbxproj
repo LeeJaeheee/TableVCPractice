@@ -24,6 +24,7 @@
 		D2109F002B4D32D200EE9BF1 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EFF2B4D32D200EE9BF1 /* CityInfo.swift */; };
 		D25815F82B4D4469005B95FC /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25815F62B4D4469005B95FC /* CityCollectionViewCell.swift */; };
 		D25815F92B4D4469005B95FC /* CityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25815F72B4D4469005B95FC /* CityCollectionViewCell.xib */; };
+		D25815FB2B4D4912005B95FC /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25815FA2B4D4912005B95FC /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		D2109EFF2B4D32D200EE9BF1 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
 		D25815F62B4D4469005B95FC /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
 		D25815F72B4D4469005B95FC /* CityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCollectionViewCell.xib; sourceTree = "<group>"; };
+		D25815FA2B4D4912005B95FC /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D2109EFD2B4D32BF00EE9BF1 /* CityCollectionViewController.swift */,
 				D25815F62B4D4469005B95FC /* CityCollectionViewCell.swift */,
 				D25815F72B4D4469005B95FC /* CityCollectionViewCell.xib */,
+				D25815FA2B4D4912005B95FC /* CityViewController.swift */,
 			);
 			path = City;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2109EDE2B491D9B00EE9BF1 /* Case3TableViewController.swift in Sources */,
+				D25815FB2B4D4912005B95FC /* CityViewController.swift in Sources */,
 				D2109ECC2B4903FC00EE9BF1 /* ViewController.swift in Sources */,
 				D2109EC82B4903FC00EE9BF1 /* AppDelegate.swift in Sources */,
 				D2109F002B4D32D200EE9BF1 /* CityInfo.swift in Sources */,

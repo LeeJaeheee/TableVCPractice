@@ -17,7 +17,6 @@ class CityCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     
-        imageView.layer.cornerRadius = (UIScreen.main.bounds.width - (24 * 3)) / 4
         imageView.contentMode = .scaleToFill
         
         nameLabel.textAlignment = .center
@@ -27,6 +26,10 @@ class CityCollectionViewCell: UICollectionViewCell {
         explainLabel.numberOfLines = 2
         explainLabel.font = .systemFont(ofSize: 13)
         explainLabel.textColor = .systemGray
+    }
+    
+    override func layoutSubviews() {
+        imageView.layer.cornerRadius = imageView.bounds.width / 2
     }
     
     func configureCell(city: City) {
