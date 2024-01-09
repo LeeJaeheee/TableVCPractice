@@ -20,6 +20,9 @@
 		D2109EE82B4BE47A00EE9BF1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D2109EE72B4BE47A00EE9BF1 /* Kingfisher */; };
 		D2109EEA2B4BE4EA00EE9BF1 /* MagazineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EE92B4BE4EA00EE9BF1 /* MagazineTableViewController.swift */; };
 		D2109EEC2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EEB2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift */; };
+		D2109EFE2B4D32BF00EE9BF1 /* CityCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EFD2B4D32BF00EE9BF1 /* CityCollectionViewController.swift */; };
+		D2109F002B4D32D200EE9BF1 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109EFF2B4D32D200EE9BF1 /* CityInfo.swift */; };
+		D2109F022B4D370000EE9BF1 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2109F012B4D370000EE9BF1 /* CityCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		D2109EE42B4BE3DF00EE9BF1 /* MagazineInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineInfo.swift; sourceTree = "<group>"; };
 		D2109EE92B4BE4EA00EE9BF1 /* MagazineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineTableViewController.swift; sourceTree = "<group>"; };
 		D2109EEB2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineTableViewCell.swift; sourceTree = "<group>"; };
+		D2109EFD2B4D32BF00EE9BF1 /* CityCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCollectionViewController.swift; sourceTree = "<group>"; };
+		D2109EFF2B4D32D200EE9BF1 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
+		D2109F012B4D370000EE9BF1 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		D2109EC62B4903FC00EE9BF1 /* TableVCPractice */ = {
 			isa = PBXGroup;
 			children = (
+				D2109EFC2B4D328600EE9BF1 /* City */,
 				D2109EC72B4903FC00EE9BF1 /* AppDelegate.swift */,
 				D2109EC92B4903FC00EE9BF1 /* SceneDelegate.swift */,
 				D2109ECB2B4903FC00EE9BF1 /* ViewController.swift */,
@@ -85,6 +92,16 @@
 				D2109EEB2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift */,
 			);
 			path = TableVCPractice;
+			sourceTree = "<group>";
+		};
+		D2109EFC2B4D328600EE9BF1 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				D2109EFF2B4D32D200EE9BF1 /* CityInfo.swift */,
+				D2109EFD2B4D32BF00EE9BF1 /* CityCollectionViewController.swift */,
+				D2109F012B4D370000EE9BF1 /* CityCollectionViewCell.swift */,
+			);
+			path = City;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,12 +184,15 @@
 				D2109EDE2B491D9B00EE9BF1 /* Case3TableViewController.swift in Sources */,
 				D2109ECC2B4903FC00EE9BF1 /* ViewController.swift in Sources */,
 				D2109EC82B4903FC00EE9BF1 /* AppDelegate.swift in Sources */,
+				D2109F002B4D32D200EE9BF1 /* CityInfo.swift in Sources */,
 				D2109EDC2B4909A400EE9BF1 /* Case2TableViewController.swift in Sources */,
 				D2109EE52B4BE3E000EE9BF1 /* MagazineInfo.swift in Sources */,
 				D2109EEA2B4BE4EA00EE9BF1 /* MagazineTableViewController.swift in Sources */,
+				D2109F022B4D370000EE9BF1 /* CityCollectionViewCell.swift in Sources */,
 				D2109EEC2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift in Sources */,
 				D2109ECA2B4903FC00EE9BF1 /* SceneDelegate.swift in Sources */,
 				D2109EE02B491DCA00EE9BF1 /* Case3TableViewCell.swift in Sources */,
+				D2109EFE2B4D32BF00EE9BF1 /* CityCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
