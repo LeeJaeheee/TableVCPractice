@@ -19,11 +19,14 @@ class CityViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet var collectionView: UICollectionView!
     
     let cityInfo = CityInfo()
+    var cities: [City] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "인기 도시"
+        
+        cities = cityInfo.city
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -41,21 +44,40 @@ class CityViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         collectionView.collectionViewLayout = layout
         
+        setupSegmentedControl()
+    }
+    
+    func setupSegmentedControl() {
         segmentedControl.removeAllSegments()
         CitySegment.allCases.enumerated().forEach { (i, citySeg) in
             segmentedControl.insertSegment(withTitle: citySeg.rawValue, at: i, animated: true)
         }
         segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.addTarget(self, action: #selector(segmentValueChanged), for: .valueChanged)
+    }
+    
+    @objc func segmentValueChanged(sender: UISegmentedControl) {
+        let citySeg: CitySegment = CitySegment(rawValue: sender.titleForSegment(at: sender.selectedSegmentIndex)!)!
+        switch citySeg {
+        case .모두:
+            cities = cityInfo.city
+        case .국내:
+            cities = cityInfo.city.filter { $0.domestic_travel }
+        case .해외:
+            cities = cityInfo.city.filter { !$0.domestic_travel }
+        }
+        collectionView.reloadData()
+        collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cityInfo.city.count
+        return cities.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CityCollectionViewCell", for: indexPath) as! CityCollectionViewCell
         
-        cell.configureCell(city: cityInfo.city[indexPath.item])
+        cell.configureCell(city: cities[indexPath.item])
         
         return cell
     }
