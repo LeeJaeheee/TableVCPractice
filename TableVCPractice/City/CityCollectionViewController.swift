@@ -16,6 +16,8 @@ class CityCollectionViewController: UICollectionViewController {
 
         navigationItem.title = "인기 도시"
         
+        collectionView.register(UINib(nibName: "CityCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CityCollectionViewCell")
+        
         let spacing: CGFloat = 24
         let cellWidth = (UIScreen.main.bounds.width - (spacing * 3)) / 2
         
