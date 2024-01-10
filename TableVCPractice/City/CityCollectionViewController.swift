@@ -38,7 +38,7 @@ class CityCollectionViewController: UICollectionViewController {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CityCollectionViewCell", for: indexPath) as! CityCollectionViewCell
         
-        cell.configureCell(city: cityInfo.city[indexPath.item])
+        cell.configureCell(data: cityInfo.city[indexPath.item])
         
         return cell
     }

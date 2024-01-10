@@ -32,12 +32,16 @@ class CityCollectionViewCell: UICollectionViewCell {
         imageView.layer.cornerRadius = imageView.bounds.width / 2
     }
     
-    func configureCell(city: City) {
+}
+
+extension CityCollectionViewCell: MyCellProtocol {
+    static let identifier: String = "CityCollectionViewCell"
+    
+    func configureCell(data: Any) {
+        let city = data as! City
+        
         imageView.kf.setImage(with: URL(string: city.city_image))
-        
         nameLabel.text = "\(city.city_name) | \(city.city_english_name)"
-        
         explainLabel.text = city.city_explain
     }
-    
 }
