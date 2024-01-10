@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MagazineTableViewCell: UITableViewCell {
     
@@ -14,15 +15,39 @@ class MagazineTableViewCell: UITableViewCell {
     @IBOutlet var subTitleLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     
+    let dateFormatter = DateFormatter()
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        print(#function)
+
+        thumbnailImageView.contentMode = .scaleToFill
+        thumbnailImageView.layer.cornerRadius = 12
+        
+        titleLabel.numberOfLines = 2
+        titleLabel.font = .boldSystemFont(ofSize: 22)
+        
+        subTitleLabel.textColor = .systemGray
+        subTitleLabel.font = .systemFont(ofSize: 15)
+
+        dateLabel.textColor = .systemGray
+        dateLabel.font = .systemFont(ofSize: 14)
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        print(#function)
-    }
+}
 
+extension MagazineTableViewCell: MyCellProtocol {
+    static let identifier: String = "MagazineTableViewCell"
+    
+    func configureCell(data: Any) {
+        let magazine = data as! Magazine
+        
+        thumbnailImageView.kf.setImage(with: URL(string: magazine.photo_image))
+        titleLabel.text = magazine.title
+        subTitleLabel.text = magazine.subtitle
+        
+        dateFormatter.dateFormat = "yyMMdd"
+        let date = dateFormatter.date(from: magazine.date)!
+        dateFormatter.dateFormat = "yy년 MM월 dd일"
+        dateLabel.text = dateFormatter.string(from: date)
+    }
 }

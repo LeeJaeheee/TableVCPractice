@@ -27,6 +27,7 @@
 		D25815FB2B4D4912005B95FC /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25815FA2B4D4912005B95FC /* CityViewController.swift */; };
 		D25816142B4E8EF7005B95FC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816132B4E8EF7005B95FC /* Protocols.swift */; };
 		D25816162B4F4336005B95FC /* City.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25816152B4F4336005B95FC /* City.storyboard */; };
+		D25816182B4F4772005B95FC /* Magazine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25816172B4F4772005B95FC /* Magazine.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		D25815FA2B4D4912005B95FC /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		D25816132B4E8EF7005B95FC /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D25816152B4F4336005B95FC /* City.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = City.storyboard; sourceTree = "<group>"; };
+		D25816172B4F4772005B95FC /* Magazine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazine.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				D2109EE42B4BE3DF00EE9BF1 /* MagazineInfo.swift */,
 				D2109EE92B4BE4EA00EE9BF1 /* MagazineTableViewController.swift */,
 				D2109EEB2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift */,
+				D25816172B4F4772005B95FC /* Magazine.storyboard */,
 			);
 			path = TableVCPractice;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				D2109ED12B4903FD00EE9BF1 /* Assets.xcassets in Resources */,
 				D2109ECF2B4903FC00EE9BF1 /* Main.storyboard in Resources */,
 				D25816162B4F4336005B95FC /* City.storyboard in Resources */,
+				D25816182B4F4772005B95FC /* Magazine.storyboard in Resources */,
 				D25815F92B4D4469005B95FC /* CityCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
