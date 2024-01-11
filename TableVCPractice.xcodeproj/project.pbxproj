@@ -35,6 +35,8 @@
 		D25816652B4FD708005B95FC /* ADTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25816632B4FD708005B95FC /* ADTableViewCell.xib */; };
 		D25816672B4FD713005B95FC /* Travel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25816662B4FD713005B95FC /* Travel.storyboard */; };
 		D25816692B4FD741005B95FC /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816682B4FD741005B95FC /* TravelViewController.swift */; };
+		D258166C2B4FFC2A005B95FC /* TravelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258166B2B4FFC2A005B95FC /* TravelDetailViewController.swift */; };
+		D258166E2B4FFC5A005B95FC /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258166D2B4FFC5A005B95FC /* ADViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		D25816632B4FD708005B95FC /* ADTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADTableViewCell.xib; sourceTree = "<group>"; };
 		D25816662B4FD713005B95FC /* Travel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Travel.storyboard; sourceTree = "<group>"; };
 		D25816682B4FD741005B95FC /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
+		D258166B2B4FFC2A005B95FC /* TravelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailViewController.swift; sourceTree = "<group>"; };
+		D258166D2B4FFC5A005B95FC /* ADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 				D25816632B4FD708005B95FC /* ADTableViewCell.xib */,
 				D25816662B4FD713005B95FC /* Travel.storyboard */,
 				D25816682B4FD741005B95FC /* TravelViewController.swift */,
+				D258166B2B4FFC2A005B95FC /* TravelDetailViewController.swift */,
+				D258166D2B4FFC5A005B95FC /* ADViewController.swift */,
 			);
 			path = Travel;
 			sourceTree = "<group>";
@@ -248,11 +254,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D25816692B4FD741005B95FC /* TravelViewController.swift in Sources */,
+				D258166E2B4FFC5A005B95FC /* ADViewController.swift in Sources */,
 				D2109EDE2B491D9B00EE9BF1 /* Case3TableViewController.swift in Sources */,
 				D25815FB2B4D4912005B95FC /* CityViewController.swift in Sources */,
 				D2109ECC2B4903FC00EE9BF1 /* ViewController.swift in Sources */,
 				D2109EC82B4903FC00EE9BF1 /* AppDelegate.swift in Sources */,
 				D2109F002B4D32D200EE9BF1 /* CityInfo.swift in Sources */,
+				D258166C2B4FFC2A005B95FC /* TravelDetailViewController.swift in Sources */,
 				D25816642B4FD708005B95FC /* ADTableViewCell.swift in Sources */,
 				D25816602B4FD6E1005B95FC /* TravelTableViewCell.swift in Sources */,
 				D2109EDC2B4909A400EE9BF1 /* Case2TableViewController.swift in Sources */,

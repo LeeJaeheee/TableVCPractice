@@ -59,4 +59,16 @@ extension TravelViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if travelList.travel[indexPath.row].ad {
+            
+        } else {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TravelDetailViewController") as! TravelDetailViewController
+            
+            // vc.navigationItem.title = "관광지 화면"
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
+    
 }
