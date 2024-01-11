@@ -46,6 +46,7 @@ extension TravelViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: ADTableViewCell.identifier, for: indexPath) as! ADTableViewCell
             
             cell.configureCell(data: travelList.travel[indexPath.row].title)
+            cell.selectionStyle = .none
             
             return cell
         } else {
@@ -61,14 +62,18 @@ extension TravelViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if travelList.travel[indexPath.row].ad {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "ADViewController") as! ADViewController
             
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            
+            present(nav, animated: true)
         } else {
-            let vc = storyboard?.instantiateViewController(withIdentifier: "TravelDetailViewController") as! TravelDetailViewController
+            tableView.reloadRows(at: [indexPath], with: .automatic)
             
-            // vc.navigationItem.title = "관광지 화면"
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TravelDetailViewController") as! TravelDetailViewController
             navigationController?.pushViewController(vc, animated: true)
         }
-        tableView.reloadRows(at: [indexPath], with: .automatic)
     }
     
 }

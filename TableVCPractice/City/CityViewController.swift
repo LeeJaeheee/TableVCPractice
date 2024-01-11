@@ -76,7 +76,7 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "Travel", bundle: nil)
         
-        let vc = sb.instantiateViewController(withIdentifier: "TravelViewController")
+        let vc = sb.instantiateViewController(withIdentifier: "TravelViewController") as! TravelViewController
         
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -100,6 +100,7 @@ extension CityViewController: MyCollectionVCProtocol {
     
     func configureNavigation() {
         navigationItem.title = "인기 도시"
+        navigationController?.navigationBar.tintColor = .darkGray
     }
     
     func configureView() {

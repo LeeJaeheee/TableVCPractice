@@ -56,7 +56,7 @@
         <!--View Controller-->
         <scene sceneID="Xuz-Gi-KUI">
             <objects>
-                <viewController id="XsB-sY-xv4" customClass="ADViewController" customModule="TableVCPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ADViewController" id="XsB-sY-xv4" customClass="ADViewController" customModule="TableVCPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g5R-b5-UDt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
