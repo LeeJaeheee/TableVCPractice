@@ -25,12 +25,8 @@ class CityViewController: UIViewController {
         super.viewDidLoad()
         
         cities = cityInfo.city
-        
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        
-        collectionView.register(UINib(nibName: "CityCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: CityCollectionViewCell.identifier)
-        
+
+        configureCollectionView()
         configureNavigation()
         configureLayout()
         configureView()
@@ -52,6 +48,17 @@ class CityViewController: UIViewController {
 
 }
 
+extension CityViewController {
+    
+    func configureCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        collectionView.register(UINib(nibName: CityCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CityCollectionViewCell.identifier)
+    }
+    
+}
+
 extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,6 +71,14 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.configureCell(data: cities[indexPath.item])
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Travel", bundle: nil)
+        
+        let vc = sb.instantiateViewController(withIdentifier: "TravelViewController")
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

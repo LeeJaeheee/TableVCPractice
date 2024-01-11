@@ -28,6 +28,13 @@
 		D25816142B4E8EF7005B95FC /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816132B4E8EF7005B95FC /* Protocols.swift */; };
 		D25816162B4F4336005B95FC /* City.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25816152B4F4336005B95FC /* City.storyboard */; };
 		D25816182B4F4772005B95FC /* Magazine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25816172B4F4772005B95FC /* Magazine.storyboard */; };
+		D258165D2B4FD578005B95FC /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258165C2B4FD578005B95FC /* TravelModel.swift */; };
+		D25816602B4FD6E1005B95FC /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258165E2B4FD6E1005B95FC /* TravelTableViewCell.swift */; };
+		D25816612B4FD6E1005B95FC /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D258165F2B4FD6E1005B95FC /* TravelTableViewCell.xib */; };
+		D25816642B4FD708005B95FC /* ADTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816622B4FD708005B95FC /* ADTableViewCell.swift */; };
+		D25816652B4FD708005B95FC /* ADTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25816632B4FD708005B95FC /* ADTableViewCell.xib */; };
+		D25816672B4FD713005B95FC /* Travel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25816662B4FD713005B95FC /* Travel.storyboard */; };
+		D25816692B4FD741005B95FC /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816682B4FD741005B95FC /* TravelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +60,13 @@
 		D25816132B4E8EF7005B95FC /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D25816152B4F4336005B95FC /* City.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = City.storyboard; sourceTree = "<group>"; };
 		D25816172B4F4772005B95FC /* Magazine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazine.storyboard; sourceTree = "<group>"; };
+		D258165C2B4FD578005B95FC /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		D258165E2B4FD6E1005B95FC /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
+		D258165F2B4FD6E1005B95FC /* TravelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
+		D25816622B4FD708005B95FC /* ADTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADTableViewCell.swift; sourceTree = "<group>"; };
+		D25816632B4FD708005B95FC /* ADTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADTableViewCell.xib; sourceTree = "<group>"; };
+		D25816662B4FD713005B95FC /* Travel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Travel.storyboard; sourceTree = "<group>"; };
+		D25816682B4FD741005B95FC /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,7 @@
 		D2109EC62B4903FC00EE9BF1 /* TableVCPractice */ = {
 			isa = PBXGroup;
 			children = (
+				D258165B2B4FD560005B95FC /* Travel */,
 				D25816122B4E8EE0005B95FC /* Protocol */,
 				D2109EFC2B4D328600EE9BF1 /* City */,
 				D2109EC72B4903FC00EE9BF1 /* AppDelegate.swift */,
@@ -125,6 +140,20 @@
 				D25816132B4E8EF7005B95FC /* Protocols.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D258165B2B4FD560005B95FC /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				D258165C2B4FD578005B95FC /* TravelModel.swift */,
+				D258165E2B4FD6E1005B95FC /* TravelTableViewCell.swift */,
+				D258165F2B4FD6E1005B95FC /* TravelTableViewCell.xib */,
+				D25816622B4FD708005B95FC /* ADTableViewCell.swift */,
+				D25816632B4FD708005B95FC /* ADTableViewCell.xib */,
+				D25816662B4FD713005B95FC /* Travel.storyboard */,
+				D25816682B4FD741005B95FC /* TravelViewController.swift */,
+			);
+			path = Travel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2109ED42B4903FD00EE9BF1 /* LaunchScreen.storyboard in Resources */,
+				D25816612B4FD6E1005B95FC /* TravelTableViewCell.xib in Resources */,
 				D2109ED12B4903FD00EE9BF1 /* Assets.xcassets in Resources */,
 				D2109ECF2B4903FC00EE9BF1 /* Main.storyboard in Resources */,
+				D25816672B4FD713005B95FC /* Travel.storyboard in Resources */,
+				D25816652B4FD708005B95FC /* ADTableViewCell.xib in Resources */,
 				D25816162B4F4336005B95FC /* City.storyboard in Resources */,
 				D25816182B4F4772005B95FC /* Magazine.storyboard in Resources */,
 				D25815F92B4D4469005B95FC /* CityCollectionViewCell.xib in Resources */,
@@ -207,11 +239,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25816692B4FD741005B95FC /* TravelViewController.swift in Sources */,
 				D2109EDE2B491D9B00EE9BF1 /* Case3TableViewController.swift in Sources */,
 				D25815FB2B4D4912005B95FC /* CityViewController.swift in Sources */,
 				D2109ECC2B4903FC00EE9BF1 /* ViewController.swift in Sources */,
 				D2109EC82B4903FC00EE9BF1 /* AppDelegate.swift in Sources */,
 				D2109F002B4D32D200EE9BF1 /* CityInfo.swift in Sources */,
+				D25816642B4FD708005B95FC /* ADTableViewCell.swift in Sources */,
+				D25816602B4FD6E1005B95FC /* TravelTableViewCell.swift in Sources */,
 				D2109EDC2B4909A400EE9BF1 /* Case2TableViewController.swift in Sources */,
 				D2109EE52B4BE3E000EE9BF1 /* MagazineInfo.swift in Sources */,
 				D2109EEA2B4BE4EA00EE9BF1 /* MagazineTableViewController.swift in Sources */,
@@ -219,6 +254,7 @@
 				D25816142B4E8EF7005B95FC /* Protocols.swift in Sources */,
 				D2109EEC2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift in Sources */,
 				D2109ECA2B4903FC00EE9BF1 /* SceneDelegate.swift in Sources */,
+				D258165D2B4FD578005B95FC /* TravelModel.swift in Sources */,
 				D2109EE02B491DCA00EE9BF1 /* Case3TableViewCell.swift in Sources */,
 				D2109EFE2B4D32BF00EE9BF1 /* CityCollectionViewController.swift in Sources */,
 			);
