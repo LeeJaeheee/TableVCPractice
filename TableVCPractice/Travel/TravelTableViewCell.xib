@@ -20,7 +20,6 @@
                         <rect key="frame" x="220" y="7" width="80" height="112.66666666666667"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="2aF-GY-Zja" secondAttribute="height" multiplier="1:1.4" id="Zwm-sK-TR4"/>
-                            <constraint firstAttribute="height" constant="112" id="knQ-gN-pLK"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="철도 박물관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi6-L4-Qyq">
@@ -96,12 +95,13 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="2aF-GY-Zja" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="2gv-30-EGw"/>
                     <constraint firstItem="2aF-GY-Zja" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bi6-L4-Qyq" secondAttribute="trailing" constant="16" id="30E-9E-GTH"/>
                     <constraint firstItem="gOv-mu-QJ3" firstAttribute="top" secondItem="bi6-L4-Qyq" secondAttribute="bottom" constant="3" id="31T-Qy-hvU"/>
                     <constraint firstItem="2aF-GY-Zja" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BBf-JW-JHz" secondAttribute="trailing" constant="16" id="3qN-Kt-xuA"/>
                     <constraint firstAttribute="trailing" secondItem="2aF-GY-Zja" secondAttribute="trailing" constant="20" id="4fB-n5-pdE"/>
+                    <constraint firstAttribute="bottom" secondItem="2aF-GY-Zja" secondAttribute="bottom" constant="8" id="7io-lX-hNt"/>
                     <constraint firstItem="bi6-L4-Qyq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Cbm-ov-Rdy"/>
+                    <constraint firstItem="2aF-GY-Zja" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="HOn-Zm-0r5"/>
                     <constraint firstItem="haH-IL-L81" firstAttribute="top" secondItem="2aF-GY-Zja" secondAttribute="top" constant="2" id="MzY-Ub-x2c"/>
                     <constraint firstItem="BBf-JW-JHz" firstAttribute="height" secondItem="NcF-9p-kCJ" secondAttribute="height" id="Nap-YH-HlO"/>
                     <constraint firstItem="NcF-9p-kCJ" firstAttribute="top" secondItem="gOv-mu-QJ3" secondAttribute="bottom" constant="3" id="Qtm-KA-5z4"/>
@@ -113,7 +113,6 @@
                     <constraint firstItem="2aF-GY-Zja" firstAttribute="leading" secondItem="gOv-mu-QJ3" secondAttribute="trailing" constant="16" id="fUG-Z7-ldR"/>
                     <constraint firstItem="BBf-JW-JHz" firstAttribute="leading" secondItem="NcF-9p-kCJ" secondAttribute="trailing" constant="2" id="hSc-Jg-bwC"/>
                     <constraint firstItem="BBf-JW-JHz" firstAttribute="centerY" secondItem="NcF-9p-kCJ" secondAttribute="centerY" id="laD-BT-WQK"/>
-                    <constraint firstAttribute="bottom" secondItem="2aF-GY-Zja" secondAttribute="bottom" constant="8" id="nci-pO-moA"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

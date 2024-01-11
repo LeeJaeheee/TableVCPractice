@@ -17,6 +17,7 @@ class TravelViewController: UIViewController {
         super.viewDidLoad()
 
         navigationItem.title = "도시 상세 정보"
+        navigationItem.backButtonTitle = ""
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -57,6 +58,14 @@ extension TravelViewController: UITableViewDelegate, UITableViewDataSource {
             cell.likeButton.addTarget(self, action: #selector(likeButtonTapped), for: .touchUpInside)
             
             return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if travelList.travel[indexPath.row].ad {
+            return 70
+        } else {
+            return 128
         }
     }
     
