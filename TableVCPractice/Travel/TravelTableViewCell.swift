@@ -39,22 +39,26 @@ class TravelTableViewCell: UITableViewCell, MyCellProtocol {
         travelImageView.clipsToBounds = true
         
         likeButton.tintColor = .white
-        likeButton.setImage(UIImage(systemName: "heart"), for: .normal)
     }
 
     func configureCell(data: Any) {
         let travel = data as! Travel
         
         titleLabel.text = travel.title
+        
         descriptionLabel.text = travel.description
+        
         travelImageView.kf.setImage(with: URL(string: travel.travel_image!))
+        
         gradeAndSaveLabel.text = "(\(travel.grade!)) • 저장 \(String(travel.save!.formatted()))"
+        
+        likeButton.setImage(UIImage(systemName: travel.like! ? "heart.fill" : "heart"), for: .normal)
         
         //TODO: 로직 다시 정리하기, 옵셔널 바인딩 해버리기
         gradeImageList.enumerated().forEach { (i, imageView) in
             if i < Int(travel.grade!) {
                 imageView.image = UIImage(systemName: "star.fill")
-            } else if i == Int(travel.grade!) && travel.grade! - 0.5 > Double(i) {
+            } else if i == Int(travel.grade!) && travel.grade! - 0.5 >= Double(i) {
                 imageView.image = UIImage(systemName: "star.fill.left")
             } else {
                 imageView.image = UIImage(systemName: "star")

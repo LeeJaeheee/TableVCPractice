@@ -11,7 +11,7 @@ class TravelViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
-    let travelList = TravelInfo()
+    var travelList = TravelInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,11 @@ class TravelViewController: UIViewController {
         
         let adXib = UINib(nibName: ADTableViewCell.identifier, bundle: nil)
         tableView.register(adXib, forCellReuseIdentifier: ADTableViewCell.identifier)
+    }
+    
+    @objc func likeButtonTapped(sender: UIButton) {
+        travelList.travel[sender.tag].like?.toggle()
+        tableView.reloadRows(at: [IndexPath(row: sender.tag, section: 0)], with: .automatic)
     }
 
 }
@@ -47,6 +52,8 @@ extension TravelViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: TravelTableViewCell.identifier, for: indexPath) as! TravelTableViewCell
             
             cell.configureCell(data: travelList.travel[indexPath.row])
+            cell.likeButton.tag = indexPath.row
+            cell.likeButton.addTarget(self, action: #selector(likeButtonTapped), for: .touchUpInside)
             
             return cell
         }

@@ -12,16 +12,16 @@ struct Travel {
     let travel_image: String?
     let grade: Double?
     let save: Double?
-    let like: Bool?
+    var like: Bool?
     let ad: Bool
 }
 
 struct TravelInfo {
-    let travel: [Travel] = [
+    var travel: [Travel] = [
         Travel(title: "하나우마 베이",
                description: "아름다운 자연을 감상할 수 있는 스노쿨링 명소",
                travel_image: "https://i.namu.wiki/i/sjSC1PqQU2NHmqbNLaxTX2Xjv3ECYheHBXExDxRamD_6pAqrHzON38uux4NPc0VPH_ABevlB5kDanGj-CeTiYHPGn6qVd7JvMGE6rFc-7_pJhYeSdOQO6L44SS2bfknDzvmXFtQxkjzy7wXEM40JRQ.webp",
-               grade: 4.8,
+               grade: 4.5,
                save: 6932,
                like: false,
                ad: false),
