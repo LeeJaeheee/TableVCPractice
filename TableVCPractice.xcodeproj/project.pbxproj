@@ -37,6 +37,23 @@
 		D25816692B4FD741005B95FC /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816682B4FD741005B95FC /* TravelViewController.swift */; };
 		D258166C2B4FFC2A005B95FC /* TravelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258166B2B4FFC2A005B95FC /* TravelDetailViewController.swift */; };
 		D258166E2B4FFC5A005B95FC /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258166D2B4FFC5A005B95FC /* ADViewController.swift */; };
+		D25816732B52B795005B95FC /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816722B52B795005B95FC /* ChattingData.swift */; };
+		D25816792B52BC2B005B95FC /* TravelTalk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25816782B52BC2B005B95FC /* TravelTalk.storyboard */; };
+		D258167B2B52BEEA005B95FC /* TravelTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258167A2B52BEEA005B95FC /* TravelTalkViewController.swift */; };
+		D258167F2B52C0AD005B95FC /* TravelTalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258167D2B52C0AD005B95FC /* TravelTalkTableViewCell.swift */; };
+		D25816802B52C0AD005B95FC /* TravelTalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D258167E2B52C0AD005B95FC /* TravelTalkTableViewCell.xib */; };
+		D25816842B52D19F005B95FC /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25816832B52D19F005B95FC /* ProfileView.xib */; };
+		D258168F2B53A6D0005B95FC /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D258168E2B53A6D0005B95FC /* Chatting.storyboard */; };
+		D25816912B53A6E3005B95FC /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816902B53A6E3005B95FC /* ChattingViewController.swift */; };
+		D25816952B53B1CA005B95FC /* ChattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816932B53B1CA005B95FC /* ChattingTableViewCell.swift */; };
+		D25816962B53B1CA005B95FC /* ChattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25816942B53B1CA005B95FC /* ChattingTableViewCell.xib */; };
+		D25816992B53B947005B95FC /* MyChattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816972B53B947005B95FC /* MyChattingTableViewCell.swift */; };
+		D258169A2B53B947005B95FC /* MyChattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25816982B53B947005B95FC /* MyChattingTableViewCell.xib */; };
+		D258169C2B53CA3F005B95FC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258169B2B53CA3F005B95FC /* ProfileView.swift */; };
+		D258169E2B53DF9C005B95FC /* ChattingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D258169D2B53DF9C005B95FC /* ChattingHeaderView.xib */; };
+		D25816A02B53E195005B95FC /* ChattingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258169F2B53E195005B95FC /* ChattingHeaderView.swift */; };
+		D25816A22B54266E005B95FC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816A12B54266E005B95FC /* String+Extension.swift */; };
+		D25816A52B54286A005B95FC /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D25816A42B54286A005B95FC /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +88,22 @@
 		D25816682B4FD741005B95FC /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
 		D258166B2B4FFC2A005B95FC /* TravelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailViewController.swift; sourceTree = "<group>"; };
 		D258166D2B4FFC5A005B95FC /* ADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
+		D25816722B52B795005B95FC /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
+		D25816782B52BC2B005B95FC /* TravelTalk.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelTalk.storyboard; sourceTree = "<group>"; };
+		D258167A2B52BEEA005B95FC /* TravelTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkViewController.swift; sourceTree = "<group>"; };
+		D258167D2B52C0AD005B95FC /* TravelTalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkTableViewCell.swift; sourceTree = "<group>"; };
+		D258167E2B52C0AD005B95FC /* TravelTalkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTalkTableViewCell.xib; sourceTree = "<group>"; };
+		D25816832B52D19F005B95FC /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		D258168E2B53A6D0005B95FC /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
+		D25816902B53A6E3005B95FC /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		D25816932B53B1CA005B95FC /* ChattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTableViewCell.swift; sourceTree = "<group>"; };
+		D25816942B53B1CA005B95FC /* ChattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingTableViewCell.xib; sourceTree = "<group>"; };
+		D25816972B53B947005B95FC /* MyChattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChattingTableViewCell.swift; sourceTree = "<group>"; };
+		D25816982B53B947005B95FC /* MyChattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChattingTableViewCell.xib; sourceTree = "<group>"; };
+		D258169B2B53CA3F005B95FC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D258169D2B53DF9C005B95FC /* ChattingHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingHeaderView.xib; sourceTree = "<group>"; };
+		D258169F2B53E195005B95FC /* ChattingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingHeaderView.swift; sourceTree = "<group>"; };
+		D25816A12B54266E005B95FC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2109EE82B4BE47A00EE9BF1 /* Kingfisher in Frameworks */,
+				D25816A52B54286A005B95FC /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +138,7 @@
 		D2109EC62B4903FC00EE9BF1 /* TableVCPractice */ = {
 			isa = PBXGroup;
 			children = (
+				D25816712B52B758005B95FC /* TravelTalk */,
 				D258166A2B4FDF4A005B95FC /* Extension */,
 				D258165B2B4FD560005B95FC /* Travel */,
 				D25816122B4E8EE0005B95FC /* Protocol */,
@@ -166,8 +201,79 @@
 		D258166A2B4FDF4A005B95FC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D25816A12B54266E005B95FC /* String+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D25816712B52B758005B95FC /* TravelTalk */ = {
+			isa = PBXGroup;
+			children = (
+				D25816772B52BC16005B95FC /* Chatting */,
+				D25816762B52BBED005B95FC /* TravelTalk */,
+				D25816752B52BB87005B95FC /* Model */,
+			);
+			path = TravelTalk;
+			sourceTree = "<group>";
+		};
+		D25816752B52BB87005B95FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D25816722B52B795005B95FC /* ChattingData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D25816762B52BBED005B95FC /* TravelTalk */ = {
+			isa = PBXGroup;
+			children = (
+				D258167C2B52C085005B95FC /* Cell */,
+				D25816782B52BC2B005B95FC /* TravelTalk.storyboard */,
+				D258167A2B52BEEA005B95FC /* TravelTalkViewController.swift */,
+			);
+			path = TravelTalk;
+			sourceTree = "<group>";
+		};
+		D25816772B52BC16005B95FC /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				D25816922B53B169005B95FC /* Cell */,
+				D258168E2B53A6D0005B95FC /* Chatting.storyboard */,
+				D25816902B53A6E3005B95FC /* ChattingViewController.swift */,
+			);
+			path = Chatting;
+			sourceTree = "<group>";
+		};
+		D258167C2B52C085005B95FC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D25816852B539BF9005B95FC /* ProfileView */,
+				D258167D2B52C0AD005B95FC /* TravelTalkTableViewCell.swift */,
+				D258167E2B52C0AD005B95FC /* TravelTalkTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D25816852B539BF9005B95FC /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				D25816832B52D19F005B95FC /* ProfileView.xib */,
+				D258169B2B53CA3F005B95FC /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		D25816922B53B169005B95FC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D25816932B53B1CA005B95FC /* ChattingTableViewCell.swift */,
+				D25816942B53B1CA005B95FC /* ChattingTableViewCell.xib */,
+				D25816972B53B947005B95FC /* MyChattingTableViewCell.swift */,
+				D25816982B53B947005B95FC /* MyChattingTableViewCell.xib */,
+				D258169D2B53DF9C005B95FC /* ChattingHeaderView.xib */,
+				D258169F2B53E195005B95FC /* ChattingHeaderView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +294,7 @@
 			name = TableVCPractice;
 			packageProductDependencies = (
 				D2109EE72B4BE47A00EE9BF1 /* Kingfisher */,
+				D25816A42B54286A005B95FC /* IQKeyboardManagerSwift */,
 			);
 			productName = TableVCPractice;
 			productReference = D2109EC42B4903FC00EE9BF1 /* TableVCPractice.app */;
@@ -219,6 +326,7 @@
 			mainGroup = D2109EBB2B4903FC00EE9BF1;
 			packageReferences = (
 				D2109EE62B4BE47A00EE9BF1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D25816A32B54286A005B95FC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = D2109EC52B4903FC00EE9BF1 /* Products */;
 			projectDirPath = "";
@@ -234,14 +342,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25816842B52D19F005B95FC /* ProfileView.xib in Resources */,
 				D2109ED42B4903FD00EE9BF1 /* LaunchScreen.storyboard in Resources */,
+				D258169A2B53B947005B95FC /* MyChattingTableViewCell.xib in Resources */,
 				D25816612B4FD6E1005B95FC /* TravelTableViewCell.xib in Resources */,
+				D25816962B53B1CA005B95FC /* ChattingTableViewCell.xib in Resources */,
 				D2109ED12B4903FD00EE9BF1 /* Assets.xcassets in Resources */,
+				D25816802B52C0AD005B95FC /* TravelTalkTableViewCell.xib in Resources */,
 				D2109ECF2B4903FC00EE9BF1 /* Main.storyboard in Resources */,
 				D25816672B4FD713005B95FC /* Travel.storyboard in Resources */,
 				D25816652B4FD708005B95FC /* ADTableViewCell.xib in Resources */,
+				D25816792B52BC2B005B95FC /* TravelTalk.storyboard in Resources */,
 				D25816162B4F4336005B95FC /* City.storyboard in Resources */,
 				D25816182B4F4772005B95FC /* Magazine.storyboard in Resources */,
+				D258169E2B53DF9C005B95FC /* ChattingHeaderView.xib in Resources */,
+				D258168F2B53A6D0005B95FC /* Chatting.storyboard in Resources */,
 				D25815F92B4D4469005B95FC /* CityCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,8 +368,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25816912B53A6E3005B95FC /* ChattingViewController.swift in Sources */,
+				D258169C2B53CA3F005B95FC /* ProfileView.swift in Sources */,
 				D25816692B4FD741005B95FC /* TravelViewController.swift in Sources */,
 				D258166E2B4FFC5A005B95FC /* ADViewController.swift in Sources */,
+				D258167B2B52BEEA005B95FC /* TravelTalkViewController.swift in Sources */,
 				D2109EDE2B491D9B00EE9BF1 /* Case3TableViewController.swift in Sources */,
 				D25815FB2B4D4912005B95FC /* CityViewController.swift in Sources */,
 				D2109ECC2B4903FC00EE9BF1 /* ViewController.swift in Sources */,
@@ -263,15 +381,21 @@
 				D258166C2B4FFC2A005B95FC /* TravelDetailViewController.swift in Sources */,
 				D25816642B4FD708005B95FC /* ADTableViewCell.swift in Sources */,
 				D25816602B4FD6E1005B95FC /* TravelTableViewCell.swift in Sources */,
+				D25816732B52B795005B95FC /* ChattingData.swift in Sources */,
+				D25816992B53B947005B95FC /* MyChattingTableViewCell.swift in Sources */,
 				D2109EDC2B4909A400EE9BF1 /* Case2TableViewController.swift in Sources */,
 				D2109EE52B4BE3E000EE9BF1 /* MagazineInfo.swift in Sources */,
+				D25816A02B53E195005B95FC /* ChattingHeaderView.swift in Sources */,
 				D2109EEA2B4BE4EA00EE9BF1 /* MagazineTableViewController.swift in Sources */,
 				D25815F82B4D4469005B95FC /* CityCollectionViewCell.swift in Sources */,
 				D25816142B4E8EF7005B95FC /* Protocols.swift in Sources */,
+				D258167F2B52C0AD005B95FC /* TravelTalkTableViewCell.swift in Sources */,
 				D2109EEC2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift in Sources */,
 				D2109ECA2B4903FC00EE9BF1 /* SceneDelegate.swift in Sources */,
+				D25816952B53B1CA005B95FC /* ChattingTableViewCell.swift in Sources */,
 				D258165D2B4FD578005B95FC /* TravelModel.swift in Sources */,
 				D2109EE02B491DCA00EE9BF1 /* Case3TableViewCell.swift in Sources */,
+				D25816A22B54266E005B95FC /* String+Extension.swift in Sources */,
 				D2109EFE2B4D32BF00EE9BF1 /* CityCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +633,14 @@
 				minimumVersion = 7.10.1;
 			};
 		};
+		D25816A32B54286A005B95FC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -516,6 +648,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D2109EE62B4BE47A00EE9BF1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		D25816A42B54286A005B95FC /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D25816A32B54286A005B95FC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

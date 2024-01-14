@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChattingHeaderView" customModule="TableVCPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="24"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pga-QO-7ZA">
+                    <rect key="frame" x="145" y="0.0" width="103.33333333333331" height="24"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tac-Dq-bsF">
+                            <rect key="frame" x="8" y="4" width="87.333333333333329" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="tac-Dq-bsF" firstAttribute="top" secondItem="pga-QO-7ZA" secondAttribute="top" constant="4" id="04W-oa-soj"/>
+                        <constraint firstItem="tac-Dq-bsF" firstAttribute="leading" secondItem="pga-QO-7ZA" secondAttribute="leading" constant="8" id="57M-yC-iPp"/>
+                        <constraint firstItem="tac-Dq-bsF" firstAttribute="centerX" secondItem="pga-QO-7ZA" secondAttribute="centerX" id="Vmv-Tq-DNC"/>
+                        <constraint firstAttribute="trailing" secondItem="tac-Dq-bsF" secondAttribute="trailing" constant="8" id="cWT-Ex-NgO"/>
+                        <constraint firstAttribute="bottom" secondItem="tac-Dq-bsF" secondAttribute="bottom" constant="4" id="pyR-VE-dAy"/>
+                        <constraint firstItem="tac-Dq-bsF" firstAttribute="centerY" secondItem="pga-QO-7ZA" secondAttribute="centerY" id="shY-mi-cYc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pga-QO-7ZA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FEy-Pi-V5R"/>
+                <constraint firstItem="pga-QO-7ZA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KuJ-XX-wjf"/>
+                <constraint firstItem="pga-QO-7ZA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UxK-bV-QpI"/>
+                <constraint firstAttribute="bottom" secondItem="pga-QO-7ZA" secondAttribute="bottom" id="ffx-k7-Xay"/>
+                <constraint firstItem="pga-QO-7ZA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ks1-gu-m8S"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pga-QO-7ZA" secondAttribute="trailing" id="scB-5O-K6p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerView" destination="pga-QO-7ZA" id="gmB-3I-8G2"/>
+                <outlet property="titleLabel" destination="tac-Dq-bsF" id="Rhu-v3-fA9"/>
+            </connections>
+            <point key="canvasLocation" x="41.984732824427482" y="-304.22535211267609"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
