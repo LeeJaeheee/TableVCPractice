@@ -101,18 +101,15 @@ extension CityViewController: UISearchBarDelegate {
     }
     
     func filterCities() {
-        var filterData: [City] = []
-        guard let text = searchBar.text else { return }
-        
-        if text == "" {
+        guard let searchText = searchBar.text, !searchText.isEmpty else {
             self.filterData = cities
-        } else {
-            for item in cities {
-                if item.city_name.contains(text) || item.city_english_name.contains(text) || item.city_explain.contains(text) {
-                    filterData.append(item)
-                }
-            }
-            self.filterData = filterData
+            return
+        }
+        
+        self.filterData = cities.filter {
+            $0.city_name.localizedCaseInsensitiveContains(searchText) ||
+            $0.city_english_name.localizedCaseInsensitiveContains(searchText) ||
+            $0.city_explain.localizedCaseInsensitiveContains(searchText)
         }
     }
     
