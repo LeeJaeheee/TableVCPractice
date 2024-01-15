@@ -87,6 +87,7 @@ extension CityViewController {
 extension CityViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchBar.text = searchText.filter { !$0.isWhitespace }
         filterCities()
     }
     
