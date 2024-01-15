@@ -87,11 +87,11 @@ extension CityViewController {
 extension CityViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchBar.text = searchText.filter { !$0.isWhitespace }
         filterCities()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = searchBar.text?.filter { !($0.isWhitespace || $0.isNewline) }
         self.view.endEditing(true)
     }
     
@@ -102,7 +102,7 @@ extension CityViewController: UISearchBarDelegate {
     }
     
     func filterCities() {
-        guard let searchText = searchBar.text, !searchText.isEmpty else {
+        guard let searchText = searchBar.text?.filter({ !($0.isWhitespace || $0.isNewline) }), !searchText.isEmpty else {
             self.filterData = cities
             return
         }
