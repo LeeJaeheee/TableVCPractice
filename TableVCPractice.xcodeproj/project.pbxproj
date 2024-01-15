@@ -58,6 +58,8 @@
 		D25816B82B54EECE005B95FC /* MagazineWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816B72B54EECE005B95FC /* MagazineWebViewController.swift */; };
 		D25816BA2B54EF3B005B95FC /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816B92B54EF3B005B95FC /* UIViewController+Extension.swift */; };
 		D25816BC2B54EF49005B95FC /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816BB2B54EF49005B95FC /* UITableViewCell+Extension.swift */; };
+		D25816BF2B54FAB8005B95FC /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816BE2B54FAB8005B95FC /* City.swift */; };
+		D25816C12B554CEF005B95FC /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816C02B554CEF005B95FC /* UICollectionViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,8 @@
 		D25816B72B54EECE005B95FC /* MagazineWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineWebViewController.swift; sourceTree = "<group>"; };
 		D25816B92B54EF3B005B95FC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		D25816BB2B54EF49005B95FC /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		D25816BE2B54FAB8005B95FC /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		D25816C02B554CEF005B95FC /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +173,7 @@
 		D2109EFC2B4D328600EE9BF1 /* City */ = {
 			isa = PBXGroup;
 			children = (
-				D2109EFF2B4D32D200EE9BF1 /* CityInfo.swift */,
+				D25816BD2B54FAAB005B95FC /* Model */,
 				D2109EFD2B4D32BF00EE9BF1 /* CityCollectionViewController.swift */,
 				D25815F62B4D4469005B95FC /* CityCollectionViewCell.swift */,
 				D25815F72B4D4469005B95FC /* CityCollectionViewCell.xib */,
@@ -209,6 +213,7 @@
 				D25816A12B54266E005B95FC /* String+Extension.swift */,
 				D25816B92B54EF3B005B95FC /* UIViewController+Extension.swift */,
 				D25816BB2B54EF49005B95FC /* UITableViewCell+Extension.swift */,
+				D25816C02B554CEF005B95FC /* UICollectionViewCell+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -300,6 +305,15 @@
 			children = (
 				D2109EE42B4BE3DF00EE9BF1 /* MagazineInfo.swift */,
 				D25816B52B54EE8D005B95FC /* Magazine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D25816BD2B54FAAB005B95FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D25816BE2B54FAB8005B95FC /* City.swift */,
+				D2109EFF2B4D32D200EE9BF1 /* CityInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -419,9 +433,11 @@
 				D2109EEA2B4BE4EA00EE9BF1 /* MagazineTableViewController.swift in Sources */,
 				D25815F82B4D4469005B95FC /* CityCollectionViewCell.swift in Sources */,
 				D25816142B4E8EF7005B95FC /* Protocols.swift in Sources */,
+				D25816C12B554CEF005B95FC /* UICollectionViewCell+Extension.swift in Sources */,
 				D25816B62B54EE8D005B95FC /* Magazine.swift in Sources */,
 				D258167F2B52C0AD005B95FC /* TravelTalkTableViewCell.swift in Sources */,
 				D2109EEC2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift in Sources */,
+				D25816BF2B54FAB8005B95FC /* City.swift in Sources */,
 				D2109ECA2B4903FC00EE9BF1 /* SceneDelegate.swift in Sources */,
 				D25816952B53B1CA005B95FC /* ChattingTableViewCell.swift in Sources */,
 				D25816BC2B54EF49005B95FC /* UITableViewCell+Extension.swift in Sources */,

@@ -11,20 +11,44 @@ enum CitySegment: String, CaseIterable {
     case 모두
     case 국내
     case 해외
+    
+    var index: Int {
+        switch self {
+        case .모두:
+            return 0
+        case .국내:
+            return 1
+        case .해외:
+            return 2
+        }
+    }
 }
 
 class CityViewController: UIViewController {
 
+    @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var segmentedControl: UISegmentedControl!
     @IBOutlet var collectionView: UICollectionView!
     
-    let cityInfo = CityInfo()
-    var cities: [City] = []
+    let cityInfo = CityInfo.city
+    
+    var cities: [City] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
+    var filterData: [City] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cities = cityInfo.city
+        cities = cityInfo
+        filterData = cities
 
         configureCollectionView()
         configureNavigation()
@@ -33,17 +57,18 @@ class CityViewController: UIViewController {
     }
     
     @objc func segmentValueChanged(sender: UISegmentedControl) {
-        let citySeg: CitySegment = CitySegment(rawValue: sender.titleForSegment(at: sender.selectedSegmentIndex)!)!
-        switch citySeg {
+        
+        switch CitySegment.allCases.first(where: { $0.index == sender.selectedSegmentIndex })! {
         case .모두:
-            cities = cityInfo.city
+            cities = cityInfo
         case .국내:
-            cities = cityInfo.city.filter { $0.domestic_travel }
+            cities = cityInfo.filter { $0.domestic_travel }
         case .해외:
-            cities = cityInfo.city.filter { !$0.domestic_travel }
+            cities = cityInfo.filter { !$0.domestic_travel }
         }
-        collectionView.reloadData()
-        collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
+        filterCities()
+
+        // collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
     }
 
 }
@@ -59,16 +84,50 @@ extension CityViewController {
     
 }
 
+extension CityViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filterCities()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.view.endEditing(true)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        filterData = cities
+        searchBar.text = ""
+        self.view.endEditing(true)
+    }
+    
+    func filterCities() {
+        var filterData: [City] = []
+        guard let text = searchBar.text else { return }
+        
+        if text == "" {
+            self.filterData = cities
+        } else {
+            for item in cities {
+                if item.city_name.contains(text) || item.city_english_name.contains(text) || item.city_explain.contains(text) {
+                    filterData.append(item)
+                }
+            }
+            self.filterData = filterData
+        }
+    }
+    
+}
+
 extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cities.count
+        return filterData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CityCollectionViewCell.identifier, for: indexPath) as! CityCollectionViewCell
         
-        cell.configureCell(data: cities[indexPath.item])
+        cell.configureCell(data: filterData[indexPath.item])
         
         return cell
     }
@@ -76,7 +135,7 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "Travel", bundle: nil)
         
-        let vc = sb.instantiateViewController(withIdentifier: "TravelViewController") as! TravelViewController
+        let vc = sb.instantiateViewController(withIdentifier: TravelViewController.identifier) as! TravelViewController
         
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -105,11 +164,13 @@ extension CityViewController: MyCollectionVCProtocol {
     
     func configureView() {
         segmentedControl.removeAllSegments()
-        CitySegment.allCases.enumerated().forEach { (i, citySeg) in
-            segmentedControl.insertSegment(withTitle: citySeg.rawValue, at: i, animated: true)
+        CitySegment.allCases.forEach { citySeg in
+            segmentedControl.insertSegment(withTitle: citySeg.rawValue, at: citySeg.index, animated: true)
         }
-        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.selectedSegmentIndex = CitySegment.모두.index
         segmentedControl.addTarget(self, action: #selector(segmentValueChanged), for: .valueChanged)
+        
+        searchBar.showsCancelButton = true
     }
     
 }

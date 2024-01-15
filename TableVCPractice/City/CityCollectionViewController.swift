@@ -9,15 +9,38 @@ import UIKit
 
 class CityCollectionViewController: UICollectionViewController {
     
-    let cityInfo = CityInfo()
+    let cityInfo = CityInfo.city
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "인기 도시"
+        configureView()
+        configureNavigation()
+        configureLayout()
+    }
+
+}
+
+extension CityCollectionViewController {
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return cityInfo.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        collectionView.register(UINib(nibName: "CityCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CityCollectionViewCell")
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CityCollectionViewCell.identifier, for: indexPath) as! CityCollectionViewCell
         
+        cell.configureCell(data: cityInfo[indexPath.item])
+        
+        return cell
+    }
+    
+}
+
+extension CityCollectionViewController: MyCollectionVCProtocol {
+    
+    func configureLayout() {
         let spacing: CGFloat = 24
         let cellWidth = (UIScreen.main.bounds.width - (spacing * 3)) / 2
         
@@ -29,18 +52,14 @@ class CityCollectionViewController: UICollectionViewController {
         
         collectionView.collectionViewLayout = layout
     }
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cityInfo.city.count
+    
+    func configureNavigation() {
+        navigationItem.title = "인기 도시"
     }
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CityCollectionViewCell", for: indexPath) as! CityCollectionViewCell
-        
-        cell.configureCell(data: cityInfo.city[indexPath.item])
-        
-        return cell
+    func configureView() {
+        collectionView.register(UINib(nibName: CityCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CityCollectionViewCell.identifier)
     }
-
+    
+    
 }

@@ -34,8 +34,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="f2R-ca-ge5">
+                                <rect key="frame" x="0.0" y="103" width="393" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Uvk-J9-exM"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Isc-gc-qAo" id="r97-Zr-JsV"/>
+                                </connections>
+                            </searchBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S2D-lq-wik">
-                                <rect key="frame" x="24" y="127" width="345" height="31"/>
+                                <rect key="frame" x="24" y="159" width="345" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JSW-dF-Ura"/>
                                 </constraints>
@@ -45,7 +55,7 @@
                                 </segments>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Lj-Jy-pYP">
-                                <rect key="frame" x="0.0" y="181" width="393" height="671"/>
+                                <rect key="frame" x="0.0" y="213" width="393" height="639"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L2a-Xs-IVm">
                                     <size key="itemSize" width="128" height="128"/>
@@ -64,13 +74,17 @@
                             <constraint firstItem="8Lj-Jy-pYP" firstAttribute="leading" secondItem="Y52-Ro-abL" secondAttribute="leading" id="NqP-26-5dN"/>
                             <constraint firstItem="S2D-lq-wik" firstAttribute="leading" secondItem="Y52-Ro-abL" secondAttribute="leading" constant="24" id="OC9-qz-fst"/>
                             <constraint firstItem="Y52-Ro-abL" firstAttribute="trailing" secondItem="S2D-lq-wik" secondAttribute="trailing" constant="24" id="P3Y-CX-KTs"/>
-                            <constraint firstItem="S2D-lq-wik" firstAttribute="top" secondItem="Y52-Ro-abL" secondAttribute="top" constant="24" id="dXo-EA-kWf"/>
+                            <constraint firstItem="f2R-ca-ge5" firstAttribute="top" secondItem="Y52-Ro-abL" secondAttribute="top" id="csL-jU-rFP"/>
+                            <constraint firstItem="S2D-lq-wik" firstAttribute="top" secondItem="f2R-ca-ge5" secondAttribute="bottom" constant="12" id="dXo-EA-kWf"/>
                             <constraint firstAttribute="bottom" secondItem="8Lj-Jy-pYP" secondAttribute="bottom" id="fyZ-xu-iCd"/>
+                            <constraint firstItem="f2R-ca-ge5" firstAttribute="leading" secondItem="Y52-Ro-abL" secondAttribute="leading" id="nyx-va-Zv7"/>
+                            <constraint firstItem="f2R-ca-ge5" firstAttribute="trailing" secondItem="Y52-Ro-abL" secondAttribute="trailing" id="qLi-8S-Ob6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WNk-Io-KFr"/>
                     <connections>
                         <outlet property="collectionView" destination="8Lj-Jy-pYP" id="RKv-8Z-6fl"/>
+                        <outlet property="searchBar" destination="f2R-ca-ge5" id="Dzc-yI-gEi"/>
                         <outlet property="segmentedControl" destination="S2D-lq-wik" id="nsd-XO-Lo1"/>
                     </connections>
                 </viewController>

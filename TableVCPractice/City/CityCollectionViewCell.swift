@@ -35,13 +35,12 @@ class CityCollectionViewCell: UICollectionViewCell {
 }
 
 extension CityCollectionViewCell: MyCellProtocol {
-    static let identifier: String = "CityCollectionViewCell"
-    
+
     func configureCell(data: Any) {
         let city = data as! City
         
         imageView.kf.setImage(with: URL(string: city.city_image))
-        nameLabel.text = "\(city.city_name) | \(city.city_english_name)"
+        nameLabel.text = city.name
         explainLabel.text = city.city_explain
     }
 }
