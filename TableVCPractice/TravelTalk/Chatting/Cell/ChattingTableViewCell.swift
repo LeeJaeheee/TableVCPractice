@@ -7,8 +7,7 @@
 
 import UIKit
 
-class ChattingTableViewCell: UITableViewCell, MyCellProtocol {
-    static let identifier: String = "ChattingTableViewCell"
+class ChattingTableViewCell: UITableViewCell {
     
     @IBOutlet var messageView: UIView!
     @IBOutlet var profileImageView: UIImageView!

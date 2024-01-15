@@ -54,6 +54,10 @@
 		D25816A02B53E195005B95FC /* ChattingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258169F2B53E195005B95FC /* ChattingHeaderView.swift */; };
 		D25816A22B54266E005B95FC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816A12B54266E005B95FC /* String+Extension.swift */; };
 		D25816A52B54286A005B95FC /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D25816A42B54286A005B95FC /* IQKeyboardManagerSwift */; };
+		D25816B62B54EE8D005B95FC /* Magazine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816B52B54EE8D005B95FC /* Magazine.swift */; };
+		D25816B82B54EECE005B95FC /* MagazineWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816B72B54EECE005B95FC /* MagazineWebViewController.swift */; };
+		D25816BA2B54EF3B005B95FC /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816B92B54EF3B005B95FC /* UIViewController+Extension.swift */; };
+		D25816BC2B54EF49005B95FC /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25816BB2B54EF49005B95FC /* UITableViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +108,10 @@
 		D258169D2B53DF9C005B95FC /* ChattingHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingHeaderView.xib; sourceTree = "<group>"; };
 		D258169F2B53E195005B95FC /* ChattingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingHeaderView.swift; sourceTree = "<group>"; };
 		D25816A12B54266E005B95FC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D25816B52B54EE8D005B95FC /* Magazine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magazine.swift; sourceTree = "<group>"; };
+		D25816B72B54EECE005B95FC /* MagazineWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineWebViewController.swift; sourceTree = "<group>"; };
+		D25816B92B54EF3B005B95FC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		D25816BB2B54EF49005B95FC /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,7 @@
 		D2109EC62B4903FC00EE9BF1 /* TableVCPractice */ = {
 			isa = PBXGroup;
 			children = (
+				D25816B32B54EE2D005B95FC /* Magazine */,
 				D25816712B52B758005B95FC /* TravelTalk */,
 				D258166A2B4FDF4A005B95FC /* Extension */,
 				D258165B2B4FD560005B95FC /* Travel */,
@@ -153,10 +162,6 @@
 				D2109EDB2B4909A400EE9BF1 /* Case2TableViewController.swift */,
 				D2109EDD2B491D9B00EE9BF1 /* Case3TableViewController.swift */,
 				D2109EDF2B491DCA00EE9BF1 /* Case3TableViewCell.swift */,
-				D2109EE42B4BE3DF00EE9BF1 /* MagazineInfo.swift */,
-				D2109EE92B4BE4EA00EE9BF1 /* MagazineTableViewController.swift */,
-				D2109EEB2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift */,
-				D25816172B4F4772005B95FC /* Magazine.storyboard */,
 			);
 			path = TableVCPractice;
 			sourceTree = "<group>";
@@ -202,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				D25816A12B54266E005B95FC /* String+Extension.swift */,
+				D25816B92B54EF3B005B95FC /* UIViewController+Extension.swift */,
+				D25816BB2B54EF49005B95FC /* UITableViewCell+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -274,6 +281,27 @@
 				D258169F2B53E195005B95FC /* ChattingHeaderView.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		D25816B32B54EE2D005B95FC /* Magazine */ = {
+			isa = PBXGroup;
+			children = (
+				D25816B42B54EE78005B95FC /* Model */,
+				D2109EE92B4BE4EA00EE9BF1 /* MagazineTableViewController.swift */,
+				D2109EEB2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift */,
+				D25816172B4F4772005B95FC /* Magazine.storyboard */,
+				D25816B72B54EECE005B95FC /* MagazineWebViewController.swift */,
+			);
+			path = Magazine;
+			sourceTree = "<group>";
+		};
+		D25816B42B54EE78005B95FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2109EE42B4BE3DF00EE9BF1 /* MagazineInfo.swift */,
+				D25816B52B54EE8D005B95FC /* Magazine.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,12 +396,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25816BA2B54EF3B005B95FC /* UIViewController+Extension.swift in Sources */,
 				D25816912B53A6E3005B95FC /* ChattingViewController.swift in Sources */,
 				D258169C2B53CA3F005B95FC /* ProfileView.swift in Sources */,
 				D25816692B4FD741005B95FC /* TravelViewController.swift in Sources */,
 				D258166E2B4FFC5A005B95FC /* ADViewController.swift in Sources */,
 				D258167B2B52BEEA005B95FC /* TravelTalkViewController.swift in Sources */,
 				D2109EDE2B491D9B00EE9BF1 /* Case3TableViewController.swift in Sources */,
+				D25816B82B54EECE005B95FC /* MagazineWebViewController.swift in Sources */,
 				D25815FB2B4D4912005B95FC /* CityViewController.swift in Sources */,
 				D2109ECC2B4903FC00EE9BF1 /* ViewController.swift in Sources */,
 				D2109EC82B4903FC00EE9BF1 /* AppDelegate.swift in Sources */,
@@ -389,10 +419,12 @@
 				D2109EEA2B4BE4EA00EE9BF1 /* MagazineTableViewController.swift in Sources */,
 				D25815F82B4D4469005B95FC /* CityCollectionViewCell.swift in Sources */,
 				D25816142B4E8EF7005B95FC /* Protocols.swift in Sources */,
+				D25816B62B54EE8D005B95FC /* Magazine.swift in Sources */,
 				D258167F2B52C0AD005B95FC /* TravelTalkTableViewCell.swift in Sources */,
 				D2109EEC2B4BEBC800EE9BF1 /* MagazineTableViewCell.swift in Sources */,
 				D2109ECA2B4903FC00EE9BF1 /* SceneDelegate.swift in Sources */,
 				D25816952B53B1CA005B95FC /* ChattingTableViewCell.swift in Sources */,
+				D25816BC2B54EF49005B95FC /* UITableViewCell+Extension.swift in Sources */,
 				D258165D2B4FD578005B95FC /* TravelModel.swift in Sources */,
 				D2109EE02B491DCA00EE9BF1 /* Case3TableViewCell.swift in Sources */,
 				D25816A22B54266E005B95FC /* String+Extension.swift in Sources */,

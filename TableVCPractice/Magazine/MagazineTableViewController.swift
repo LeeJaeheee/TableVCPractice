@@ -9,7 +9,7 @@ import UIKit
 
 class MagazineTableViewController: UITableViewController {
     
-    let magazineInfo = MagazineInfo()
+    let magazineInfo = MagazineInfo.magazine
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,19 +17,27 @@ class MagazineTableViewController: UITableViewController {
         configureNavigation()
         configureView()
     }
+}
 
+extension MagazineTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return magazineInfo.magazine.count
+        return magazineInfo.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MagazineTableViewCell.identifier, for: indexPath) as! MagazineTableViewCell
         
-        cell.configureCell(data: magazineInfo.magazine[indexPath.row])
+        cell.selectionStyle = .none
+        cell.configureCell(data: magazineInfo[indexPath.row])
         
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: MagazineWebViewController.identifier) as! MagazineWebViewController
+        vc.urlString = magazineInfo[indexPath.row].link
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension MagazineTableViewController: UIConfiguration {

@@ -35,19 +35,13 @@ class MagazineTableViewCell: UITableViewCell {
 
 }
 
-extension MagazineTableViewCell: MyCellProtocol {
-    static let identifier: String = "MagazineTableViewCell"
-    
+extension MagazineTableViewCell: MyCellProtocol {    
     func configureCell(data: Any) {
         let magazine = data as! Magazine
         
         thumbnailImageView.kf.setImage(with: URL(string: magazine.photo_image))
         titleLabel.text = magazine.title
         subTitleLabel.text = magazine.subtitle
-        
-        dateFormatter.dateFormat = "yyMMdd"
-        let date = dateFormatter.date(from: magazine.date)!
-        dateFormatter.dateFormat = "yy년 MM월 dd일"
-        dateLabel.text = dateFormatter.string(from: date)
+        dateLabel.text = magazine.formattedDate
     }
 }

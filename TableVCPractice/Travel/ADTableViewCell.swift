@@ -9,8 +9,6 @@ import UIKit
 
 class ADTableViewCell: UITableViewCell, MyCellProtocol {
     
-    static let identifier: String = "ADTableViewCell"
-    
     @IBOutlet var adView: UIView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var adLabel: UILabel!

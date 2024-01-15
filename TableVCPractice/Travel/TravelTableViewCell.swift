@@ -10,8 +10,6 @@ import Kingfisher
 
 class TravelTableViewCell: UITableViewCell, MyCellProtocol {
     
-    static var identifier: String = "TravelTableViewCell"
-    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var gradeStackView: UIStackView!

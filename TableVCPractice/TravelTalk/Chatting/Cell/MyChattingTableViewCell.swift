@@ -8,7 +8,6 @@
 import UIKit
 
 class MyChattingTableViewCell: UITableViewCell, MyCellProtocol {
-    static let identifier: String = "MyChattingTableViewCell"
 
     @IBOutlet var messageView: UIView!
     @IBOutlet var messageLabel: UILabel!

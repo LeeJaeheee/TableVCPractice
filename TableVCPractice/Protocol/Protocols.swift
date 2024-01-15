@@ -8,8 +8,6 @@
 import UIKit
 
 protocol MyCellProtocol {
-    static var identifier: String { get }
-    
     func configureCell(data: Any)
 }
 
@@ -20,4 +18,8 @@ protocol UIConfiguration {
 
 protocol MyCollectionVCProtocol: UIConfiguration {
     func configureLayout()
+}
+
+protocol ReusableProtocol {
+    static var identifier: String { get }
 }

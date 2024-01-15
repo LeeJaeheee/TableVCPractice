@@ -10,8 +10,7 @@ import UIKit
 let dateFormatter = DateFormatter()
 
 class TravelTalkTableViewCell: UITableViewCell, MyCellProtocol {
-    static let identifier: String = "TravelTalkTableViewCell"
-    
+
     @IBOutlet var profileView: UIView!
     @IBOutlet var userLabel: UILabel!
     @IBOutlet var messageLabel: UILabel!
